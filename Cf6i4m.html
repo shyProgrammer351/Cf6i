@@ -3,20 +3,20 @@
 B군, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: <b><span style='color:rgb(255,0,0);'>1</span></b>
 가위를 냈습니다.
 A양이 이겼습니다. 
-</pre><br> 				<h4>1과 15 16 17 사이의 실행순서(8개) 및 실행상태</h4>
+</pre><br> 				<h4>1 이후의 실행순서(8개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'><a href='#2'>2</a>  printf( "A양, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: " );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>A양, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: </pre><br>
 <pre style='margin:0;padding:0;'><a href='#3'>3</a>  scanf( "%d", &playerA );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>2<br></pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td colspan='1' style = "font-family:monospace;margin:0px;padding:0;text-align:right; border:0px solid Silver; background:Silver;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td> <td colspan='1' style = "font-family:monospace;margin:0px;padding:0;text-align:right; border:0px solid Silver; background:Silver;">main()</td></tr> <tr> <td colspan='1' style = "font-family:monospace;margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">playerA</td> <td colspan='1' style = "font-family:monospace;margin:0px;padding:0;text-align:center; border:5px solid SkyBlue; background:Silver;"> <input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='sP3f6(0)'> &nbsp; <del>0</del></td></tr> </tbody> </table> <br>
 <pre style='margin:0;padding:0;'><a href='#4'>4</a>  switch( playerA ) {</pre><br>
-<pre style='margin:0;padding:0;'><a href='#5'>5</a>  case 1:          </pre><br>
-<pre style='margin:0;padding:0;'><a href='#8'>8</a>  case 2:          </pre><br>
+<pre style='margin:0;padding:0;'><a href='#5'>5</a>  case 1 :          </pre><br>
+<pre style='margin:0;padding:0;'><a href='#8'>8</a>  case 2 :          </pre><br>
 <pre style='margin:0;padding:0;'><a href='#9'>9</a>   printf( "바위를 냈습니다.\n" ); </pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>바위를 냈습니다.<br></pre><br>
 <pre style='margin:0;padding:0;'><a href='#10'>10</a>   break;         </pre><br>
 <pre style='margin:0;padding:0;'><a href='#13'>13</a>  printf( "B군, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: " );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>B군, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: </pre><br>
-<h4>17 18 19와 35 사이의 실행순서(4개) 및 실행상태</h4>
+<h4>16 17 18 이후의 실행순서(4개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'><a href='#24'>24</a>  if ( playerA == playerB ) {</pre><br>
 <pre style='margin:0;padding:0;'><a href='#26'>26</a>  else if ( ( playerA == 1 ) && ( playerB == 3 ) ) { </pre><br>
 <pre style='margin:0;padding:0;'><a href='#28'>28</a>  else if ( ( playerA == 2 ) && ( playerB == 1 ) ) {</pre><br>
@@ -25,18 +25,18 @@ A양이 이겼습니다.
  	   				<br><h4>프로그램 코드</h4> 				<pre>	
 	#include &lt;stdio.h&gt;
 
-<a href='javascript:history.back();' name='1'>1</a>	int main() {
+<a href='javascript:history.back();' name='1'>1</a>	int main() {				
 <a href='javascript:history.back();' name='2'>2</a>		printf( "A양, 가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: " );
 		int playerA = 0;
 <a href='javascript:history.back();' name='3'>3</a>		scanf( "%d", &playerA );
 <a href='javascript:history.back();' name='4'>4</a>		switch( playerA ) {
-<a href='javascript:history.back();' name='5'>5</a>		case 1:										
+<a href='javascript:history.back();' name='5'>5</a>		case 1 :										
 <a href='javascript:history.back();' name='6'>6</a>			printf( "가위를 냈습니다.\n" ); 
 <a href='javascript:history.back();' name='7'>7</a>			break;									
-<a href='javascript:history.back();' name='8'>8</a>		case 2:										
+<a href='javascript:history.back();' name='8'>8</a>		case 2 :										
 <a href='javascript:history.back();' name='9'>9</a>			printf( "바위를 냈습니다.\n" ); 
 <a href='javascript:history.back();' name='10'>10</a>			break;									
-<a href='javascript:history.back();' name='11'>11</a>		case 3:										
+<a href='javascript:history.back();' name='11'>11</a>		case 3 :										
 <a href='javascript:history.back();' name='12'>12</a>			printf( "보를 냈습니다.\n" ); 
 		}
 	
@@ -44,13 +44,13 @@ A양이 이겼습니다.
 		int playerB = 0;
 <a href='javascript:history.back();' name='14'>14</a>		scanf( "%d", &playerB );
 <a href='javascript:history.back();' name='15'>15</a>		switch( playerB ) {
-<a href='javascript:history.back();' name='16'>16</a>		case 1:										
+<a href='javascript:history.back();' name='16'>16</a>		case 1 :										
 <a href='javascript:history.back();' name='17'>17</a>			printf( "가위를 냈습니다.\n" ); 	
 <a href='javascript:history.back();' name='18'>18</a>			break;									
-<a href='javascript:history.back();' name='19'>19</a>		case 2:										
+<a href='javascript:history.back();' name='19'>19</a>		case 2 :										
 <a href='javascript:history.back();' name='20'>20</a>			printf( "바위를 냈습니다.\n" ); 
 <a href='javascript:history.back();' name='21'>21</a>			break;									
-<a href='javascript:history.back();' name='22'>22</a>		case 3:										
+<a href='javascript:history.back();' name='22'>22</a>		case 3 :										
 <a href='javascript:history.back();' name='23'>23</a>			printf( "보를 냈습니다.\n" ); 
 		}
 	
