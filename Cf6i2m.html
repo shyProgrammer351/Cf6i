@@ -3,7 +3,7 @@
 -13도 이하이면 한파 주의보를 발효하고,
 35도 이상이면 폭염 경보를 발효하고,
 33도 이상이면 폭염 주의보를 발효한다고 가정합니다.</pre> 				<pre class='selectable'>섭씨 -100도부터 100도 사이에서 현재 기온은 몇 도인가요 : <b><span style='color:rgb(255,0,0);'>19</span></b>
-오늘 날씨는 그나마 살만하네요 
+오늘 날씨는 그나마 살만하네요. 
 </pre><br> 				<h4>1과 14 사이의 실행순서(8개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'><a href='#2'>2</a>  printf( "섭씨 -100도부터 100도 사이에서 현재 기온은 몇 도인가요 : " );</pre>
 <pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>섭씨 -100도부터 100도 사이에서 현재 기온은 몇 도인가요 : </pre><br>
@@ -14,8 +14,8 @@
 <pre style='margin:0;padding:0;'><a href='#8'>8</a>  else if ( 35 &lt;= temperature ) {</pre><br>
 <pre style='margin:0;padding:0;'><a href='#10'>10</a>  else if (  ( 33 &lt;= temperature ) && ( temperature &lt; 35 ) ) {</pre><br>
 <pre style='margin:0;padding:0;'><a href='#12'>12</a>  else {</pre><br>
-<pre style='margin:0;padding:0;'><a href='#13'>13</a>   printf( "오늘 날씨는 그나마 살만하네요 " );</pre>
-<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>오늘 날씨는 그나마 살만하네요</pre><br>
+<pre style='margin:0;padding:0;'><a href='#13'>13</a>   printf( "오늘 날씨는 그나마 살만하네요. " );</pre>
+<pre style='font-family:monospace; background-color:black; color:white; width:807px; margin:0; padding:0;'>오늘 날씨는 그나마 살만하네요.</pre><br>
  	   				<br><h4>프로그램 코드</h4> 				<pre>	
 	#include &lt;stdio.h&gt;
 
@@ -38,7 +38,7 @@
 <a href='javascript:history.back();' name='11'>11</a>			printf( "일부 지방에 폭염 주의보가 발효중입니다. " );
 		}
 <a href='javascript:history.back();' name='12'>12</a>		else {
-<a href='javascript:history.back();' name='13'>13</a>			printf( "오늘 날씨는 그나마 살만하네요 " );
+<a href='javascript:history.back();' name='13'>13</a>			printf( "오늘 날씨는 그나마 살만하네요. " );
 		}
 		
 <a href='javascript:history.back();' name='14'>14</a>		return 0;
